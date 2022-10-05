@@ -20,51 +20,55 @@
   <body>
     <header class="container">
       <div class="navi-main">
-        <nav>
+        <nav class="navi">
           <a href="./index.html" class="header-logo"
             >Web<span class="header-studio">Studio</span></a
           >
 
-          <ul class="header-list">
-            <li><a href="./index.html" class="navigation current">Студія</a></li>
-            <li><a href="./portfolio.html" class="navigation">Портфоліо</a></li>
-            <li><a href="#" class="navigation">Контакти</a></li>
+          <ul class="navi-list list">
+            <li class="navi-item"><a href="./index.html" class="navigation current">Студія</a></li>
+            <li class="navi-item"><a href="./portfolio.html" class="navigation">Портфоліо</a></li>
+            <li class="navi-item"><a href="#" class="navigation">Контакти</a></li>
           </ul>
         </nav>
 
-        <ul class="contacts-list">
-          <li><a href="mailto:info@devstudio.com" class="contacts-top">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="contacts-top">+38 096 111 11 11</a></li>
+        <ul class="navi-list list">
+          <li class="navi-item contacts">
+            <a href="mailto:info@devstudio.com" class="contacts-top">info@devstudio.com</a>
+          </li>
+          <li class="navi-item">
+            <a href="tel:+380961111111" class="contacts-top">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button-hero">Замовити послугу</button>
       </section>
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="visually-hidden">Наші переваги</h2>
-        <ul class="advantages-list">
-          <li>
+        <ul class="advantages list">
+          <li class="advantages-item">
             <h3 class="advantages-subtitle">Увага до деталей</h3>
             <p class="advantages-text">
               Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-subtitle">Пунктуальність</h3>
             <p class="advantages-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-subtitle">Планування</h3>
             <p class="advantages-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-subtitle">Сучасні технології</h3>
             <p class="advantages-text">
               Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -72,9 +76,9 @@
           </li>
         </ul>
       </section>
-      <section class="projects">
+      <section class="projects container">
         <h2 class="projects-title">Чим ми займаємося</h2>
-        <ul class="projects-list">
+        <ul class="projects list">
           <li>
             <img src="./images/imgone.jpg" alt="Програміст працює" width="370" />
           </li>
@@ -86,9 +90,9 @@
           </li>
         </ul>
       </section>
-      <section class="profile">
+      <section class="profile container">
         <h2 class="profile-title">Наша команда</h2>
-        <ul class="profile-list">
+        <ul class="profile list">
           <li class="profile-box">
             <img src="./images/teamone.jpg" alt="Ігор Дем'яненко" width="270" />
             <div class="profile-background">
@@ -120,7 +124,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <a href="./index.html" class="footer-logo">Web<span class="footer-studio">Studio</span></a>
       <address>
         <ul class="address-list">
