@@ -392,19 +392,21 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.06em;
   padding-top: 20px;
   margin-top: 0;
   margin-bottom: 4px;
+  margin-left: 24px;
 }
 .gallery-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 20px;
+  margin-left: 24px;
 }
 
 .gallery > .gallery-box {
