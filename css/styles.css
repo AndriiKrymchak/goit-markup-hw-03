@@ -38,8 +38,8 @@ body {
 
   padding-left: 15px;
   padding-right: 15px;
-  /* background-color: salmon;
-  outline: 1px solid black; */
+  /* background-color: salmon; */
+  outline: 1px solid red;
   margin: 0 auto;
 }
 
@@ -63,7 +63,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration-line: none;
-  margin-right: 93px;
+  /* margin-right: 93px; */
 }
 
 .header {
@@ -89,6 +89,10 @@ body {
   margin: 0;
 }
 
+.navi-list.list > .navi-item:first-child {
+  margin-left: 93px;
+}
+
 .navi-item {
   display: flex;
   align-content: center;
@@ -97,7 +101,7 @@ body {
   margin-left: 50px;
 }
 
-.navi-item.contacts {
+.navi-list.list > .navi-item.contacts:first-child {
   margin-left: 344px;
 }
 
@@ -156,8 +160,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
   padding-top: 200px;
+  padding-bottom: 0;
 }
 
 .button-hero {
@@ -186,20 +192,9 @@ body {
 
 /* Наші переваги */
 
-.advantages {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
 .advantages-item:not(:first-child) {
   margin-left: 30px;
-  /* flex-basis: calc(100 / 4 - var(--item-set-gap));
-  margin-left: var(--item-set-gap);
-  margin-right: var(--item-set-gap); */
 }
-/* .advantages-item:first-child {
-  padding-left: 215px;
-} */
 
 .advantages-title {
   visibility: hidden;
@@ -222,8 +217,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 0;
-  margin-bottom: o;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 
 /* Чим ми займаємось */
@@ -377,6 +371,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
 
 .gallery-box:nth-child(3n + 3) {
@@ -392,9 +387,10 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.06em;
   padding-top: 20px;
+  padding-left: 24px;
   margin-top: 0;
   margin-bottom: 4px;
 }
@@ -402,9 +398,10 @@ body {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 20px;
+  padding-left: 24px;
 }
 
 .gallery > .gallery-box {
