@@ -191,15 +191,19 @@ body {
   flex-wrap: nowrap;
 }
 
+/* .advantages > .container {
+  display: flex;
+  
+}
+
+.address-list > .advanteges-item {
+  display: flex;
+
+} */
+
 .advantages-item:not(:first-child) {
   margin-left: 30px;
-  /* flex-basis: calc(100 / 4 - var(--item-set-gap));
-  margin-left: var(--item-set-gap);
-  margin-right: var(--item-set-gap); */
 }
-/* .advantages-item:first-child {
-  padding-left: 215px;
-} */
 
 .advantages-title {
   visibility: hidden;
@@ -222,8 +226,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 0;
-  margin-bottom: o;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
+  
 }
 
 /* Чим ми займаємось */
@@ -330,10 +334,6 @@ body {
   padding-top: 94px;
   margin-bottom: 34px;
 }
-
-/* .portfolio-item:nth-child(n + 1) {
-  margin-right: 8px;
-} */
 
 .portfolio-buttons {
   color: var(--title-text-color);
