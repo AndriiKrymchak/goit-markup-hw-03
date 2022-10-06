@@ -66,6 +66,10 @@ body {
   margin-right: 93px;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 /* Навігація */
 .navi-main {
   display: flex;
@@ -313,8 +317,23 @@ body {
   margin: -1px;
 }
 .portfolio-list {
-  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-item {
+  padding-top: 94px;
+  margin-bottom: 34px;
+}
+
+/* .portfolio-item:nth-child(n + 1) {
+  margin-right: 8px;
+} */
 
 .portfolio-buttons {
   color: var(--title-text-color);
@@ -328,6 +347,7 @@ body {
   font-size: 16px;
   line-height: 1.63;
   cursor: pointer;
+  padding: 6px 22px;
 }
 
 .portfolio-buttons:hover,
@@ -342,6 +362,25 @@ body {
 
 .gallery {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.gallery-box {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.gallery-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.gallery-box:nth-child(3n + 3) {
+  margin-right: 0;
 }
 
 .gallery-list {
@@ -355,16 +394,25 @@ body {
   line-height: 2;
   text-align: center;
   letter-spacing: 0.06em;
+  padding-top: 20px;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 .gallery-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
-.gallery-box {
-  border: 1px solid #eeeeee;
+
+.gallery > .gallery-box {
+  /* border: 1px solid #eeeeee; */
+  display: flex;
+  flex-wrap: wrap;
 }
+
 /* Футер */
 
 .footer {
