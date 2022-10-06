@@ -38,8 +38,8 @@ body {
 
   padding-left: 15px;
   padding-right: 15px;
-  /* background-color: salmon; */
-  outline: 1px solid red;
+  /* background-color: salmon;
+  outline: 1px solid black; */
   margin: 0 auto;
 }
 
@@ -63,7 +63,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration-line: none;
-  /* margin-right: 93px; */
+  margin-right: 93px;
 }
 
 .header {
@@ -89,10 +89,6 @@ body {
   margin: 0;
 }
 
-.navi-list.list > .navi-item:first-child {
-  margin-left: 93px;
-}
-
 .navi-item {
   display: flex;
   align-content: center;
@@ -101,7 +97,7 @@ body {
   margin-left: 50px;
 }
 
-.navi-list.list > .navi-item.contacts:first-child {
+.navi-item.contacts {
   margin-left: 344px;
 }
 
@@ -160,10 +156,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
   padding-top: 200px;
-  padding-bottom: 0;
 }
 
 .button-hero {
@@ -192,6 +186,21 @@ body {
 
 /* Наші переваги */
 
+.advantages {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* .advantages > .container {
+  display: flex;
+  
+}
+
+.address-list > .advanteges-item {
+  display: flex;
+
+} */
+
 .advantages-item:not(:first-child) {
   margin-left: 30px;
 }
@@ -218,6 +227,7 @@ body {
   line-height: 1.71;
   margin-top: 0;
   margin-bottom: 94px;
+  
 }
 
 /* Чим ми займаємось */
@@ -325,10 +335,6 @@ body {
   margin-bottom: 34px;
 }
 
-/* .portfolio-item:nth-child(n + 1) {
-  margin-right: 8px;
-} */
-
 .portfolio-buttons {
   color: var(--title-text-color);
   background-color: var(--filter-bg);
@@ -371,7 +377,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .gallery-box:nth-child(3n + 3) {
@@ -390,9 +395,9 @@ body {
   text-align: left;
   letter-spacing: 0.06em;
   padding-top: 20px;
-  padding-left: 24px;
   margin-top: 0;
   margin-bottom: 4px;
+  margin-left: 24px;
 }
 .gallery-text {
   color: var(--primary-text-color);
@@ -401,7 +406,7 @@ body {
   text-align: left;
   margin-top: 0;
   margin-bottom: 20px;
-  padding-left: 24px;
+  margin-left: 24px;
 }
 
 .gallery > .gallery-box {
