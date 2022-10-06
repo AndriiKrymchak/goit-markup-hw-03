@@ -34,18 +34,13 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1600px;
+  width: 1200px;
+
   padding-left: 15px;
   padding-right: 15px;
-  /* background-color: salmon; */
-  outline: 1px solid palevioletred;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header-list {
-  list-style-type: none;
+  /* background-color: salmon;
+  outline: 1px solid black; */
+  margin: 0 auto;
 }
 
 .header-logo {
@@ -59,7 +54,6 @@ body {
   padding-bottom: 0;
   margin-bottom: 25px;
   margin-top: 0;
-  padding-left: 215px;
 }
 
 .header-studio {
@@ -191,7 +185,6 @@ body {
 .advantages {
   display: flex;
   flex-wrap: nowrap;
-  /* width: 1170px; */
 }
 
 .advantages-item:not(:first-child) {
@@ -219,31 +212,28 @@ body {
   margin-bottom: 10px;
   padding-top: 94px;
 }
-.advantages.container {
-  padding-left: 0;
-  padding-right: 0;
-}
 
-.advantages-item:first-child {
-  margin-left: 215px;
-}
-.advantages-item:last-child {
-  margin-right: 215px;
-}
 .advantages-text {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: o;
+  padding-bottom: 94px;
 }
 
 /* Чим ми займаємось */
 
 .projects {
   margin-top: 0;
-  margin-bottom: 0;
   align-items: center;
+}
+
+.projects .container {
+  padding-bottom: 94px;
+}
+.projects-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .projects-title {
@@ -253,6 +243,7 @@ body {
   line-height: 1.17;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /* Наша команда */
@@ -260,6 +251,10 @@ body {
 .profile {
   margin-top: 0;
   margin-bottom: 0;
+  background-color: #f5f4fa;
+}
+.profile > .container {
+  padding-bottom: 94px;
 }
 .profile-background {
   background-color: var(--primary-white-color);
@@ -271,8 +266,11 @@ body {
   line-height: 1.17;
   text-align: center;
   margin-top: 0;
+  padding-top: 94px;
 }
-
+.profile-list .profile-box:nth-child(n + 1) {
+  margin-right: var(--item-set-gap);
+}
 .profile-box {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -285,6 +283,9 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 30px;
 }
 
 .profile-text {
@@ -292,6 +293,9 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 
 /* Портфоліо */
@@ -376,6 +380,9 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  padding-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
 }
 
 .footer-studio {
@@ -390,6 +397,16 @@ body {
 
 .address-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.address-list:last-child {
+  padding-bottom: 60px;
+}
+
+.address-item {
+  margin-bottom: 9px;
 }
 
 .map-link {
