@@ -238,7 +238,7 @@ img {
 
 .advantages-list {
   display: flex;
-  gap: 30px;
+  gap: var(--item-set-gap);
 }
 
 .advantages-item {
@@ -287,7 +287,7 @@ img {
 
 .projects-list {
   display: flex;
-  gap: 30px;
+  gap: var(--item-set-gap);
 }
 /* .projects-item:not(:first-child) {
   margin-left: 30px;
@@ -317,7 +317,7 @@ img {
 
 .profile-list {
   display: flex;
-  gap: 30px;
+  gap: var(--item-set-gap);
 }
 .profile-box {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -359,10 +359,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.portfolio-item:not(:last-child) {
-  margin-right: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .portfolio-item {
@@ -391,6 +389,7 @@ img {
   border-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  padding: 6px 24px;
 }
 /* Галерея */
 
@@ -398,30 +397,22 @@ img {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+  gap: var(--item-set-gap);
 }
 .gallery-box {
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 
-.gallery.container {
-  /* width: 1200px; */
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.gallery-box:nth-child(3n + 3) {
-  margin-right: 0;
-}
-
-.gallery-box:nth-child(n + 7) {
-  margin-bottom: 0;
-}
-.gallery-list {
+.gallery-link {
   text-decoration-line: none;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .gallery-title {
@@ -431,25 +422,12 @@ img {
   line-height: 2;
   text-align: left;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  margin-top: 0;
-  margin-bottom: 4px;
-  margin-left: 24px;
 }
 .gallery-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
   text-align: left;
-  margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
-}
-
-.gallery > .gallery-box {
-  /* border: 1px solid #eeeeee; */
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /* Футер */
