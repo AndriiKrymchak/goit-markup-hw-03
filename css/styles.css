@@ -24,11 +24,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Логотип верхній */
-
-.list {
-  list-style-type: none;
-  display: flex;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -38,15 +44,25 @@ body {
   padding-bottom: 94px;
   /* background-color: yellow; */
 }
+
 .container {
   width: 1200px;
 
   padding-left: 15px;
   padding-right: 15px;
   /* background-color: salmon; */
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin: 0 auto;
 }
+
+.list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Логотип верхній */
 
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -56,9 +72,7 @@ body {
   line-height: 1.19;
   text-decoration-line: none;
   padding-top: 24px;
-  padding-bottom: 0;
-  margin-bottom: 25px;
-  margin-top: 0;
+  padding-bottom: 25px;
 }
 
 .header-studio {
@@ -69,6 +83,8 @@ body {
   line-height: 1.19;
   text-decoration-line: none;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header {
@@ -97,6 +113,8 @@ body {
 .navi-item {
   display: flex;
   align-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navi-item:last-child {
   margin-right: 344px;
@@ -160,6 +178,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-top:hover,
@@ -174,6 +194,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -184,9 +206,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding-top: 200px;
+  display: flex;
+  width: 696px;
 }
 
 .button-hero {
@@ -204,7 +225,6 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin-bottom: 200px;
 }
 
 .button-hero:hover,
@@ -215,9 +235,18 @@ body {
 
 /* Наші переваги */
 
-.advantages-item:not(:first-child) {
-  margin-left: 30px;
+.advantages-list {
+  display: flex;
+  gap: 30px;
 }
+
+.advantages-item {
+  width: 270px;
+  text-align: left;
+}
+/* .advantages-item:not(:last-child) {
+  margin-right: 30px;
+} */
 
 .advantages-title {
   visibility: hidden;
@@ -230,7 +259,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -238,8 +266,6 @@ body {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 0;
-  margin-bottom: 94px;
 }
 
 /* Чим ми займаємось */
@@ -377,8 +403,8 @@ body {
   margin-bottom: 30px;
 }
 
-.gallery-container {
-  width: 1200px;
+.gallery.container {
+  /* width: 1200px; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -388,10 +414,13 @@ body {
   margin-right: 0;
 }
 
+.gallery-box:nth-child(n + 7) {
+  margin-bottom: 0;
+}
 .gallery-list {
   text-decoration-line: none;
-  /* background-color: var(--primary-white-color); */
 }
+
 .gallery-title {
   color: var(--title-text-color);
   font-weight: 700;
