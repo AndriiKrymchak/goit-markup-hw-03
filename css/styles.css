@@ -45,16 +45,12 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* background-color: yellow; */
 }
 
 .container {
   width: 1200px;
-
   padding-left: 15px;
   padding-right: 15px;
-  /* background-color: salmon; */
-  /* outline: 1px solid red; */
   margin: 0 auto;
 }
 
@@ -361,9 +357,6 @@ img {
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-}
-
-.portfolio-item {
   margin-bottom: 50px;
 }
 
